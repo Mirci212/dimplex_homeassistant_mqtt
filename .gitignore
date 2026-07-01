@@ -1,0 +1,14 @@
+*
+
+!.gitignore
+!LICENSE
+!README.md
+!custom_components/
+!custom_components/dimplex_homeassistant_mqtt/
+!custom_components/dimplex_homeassistant_mqtt/**
+
+
+# Ignore Python cache files
+custom_components/dimplex_homeassistant_mqtt/**/__pycache__/
+custom_components/dimplex_homeassistant_mqtt/**/*.py[cod]
+

@@ -1,0 +1,180 @@
+{
+  "entity": {
+    "sensor": {
+      "E_Aussen_T": {
+        "name": "Outdoor Temperature"
+      },
+      "E_Rueckl_T": {
+        "name": "Return Temperature"
+      },
+      "E_Vorl_T": {
+        "name": "Flow Temperature"
+      },
+      "E_Ww_Fuehl": {
+        "name": "Hot Water Temperature"
+      },
+      "Status_Wert": {
+        "name": "Heat Pump Status",
+        "state": {
+          "0": "Off",
+          "1": "Off",
+          "2": "Heating",
+          "3": "Swimming Pool",
+          "4": "Hot Water",
+          "5": "Cooling",
+          "10": "Defrost",
+          "11": "Flow Monitoring",
+          "24": "Operating Mode Change Delay",
+          "30": "Block"
+        }
+      },
+      "Stoerung_Wert": {
+        "name": "Fault Messages",
+        "state": {
+          "0": "No Fault",
+          "1": "Fault N17.1",
+          "2": "Fault N17.2",
+          "3": "Fault N17.3",
+          "4": "Fault N17.4",
+          "6": "Electronic Expansion Valve",
+          "10": "WPIO",
+          "12": "Inverter",
+          "13": "WQIF",
+          "15": "Sensor Error (see Sensor Errors)",
+          "16": "Low Pressure Brine",
+          "19": "Primary Circuit",
+          "20": "Defrost",
+          "21": "Low Pressure Brine",
+          "22": "Hot Water",
+          "23": "Compressor Load",
+          "24": "Coding",
+          "25": "Low Pressure",
+          "26": "Frost Protection",
+          "28": "High Pressure",
+          "29": "Temperature Difference",
+          "30": "Hot Gas Thermostat",
+          "31": "Flow"
+        }
+      },
+      "Fehler_Wert": {
+        "name": "Sensor Errors",
+        "state": {
+          "0": "No Fault",
+          "1": "Outdoor Sensor (R1)",
+          "2": "Return Temperature Sensor (R2)",
+          "3": "Hot Water Sensor (R3)",
+          "4": "Coding (R7)",
+          "5": "Flow Temperature Sensor (R9)",
+          "6": "2nd Heating Circuit Sensor (R5)",
+          "7": "3rd Heating Circuit Sensor (R13)",
+          "8": "Regenerative Sensor (R13)",
+          "9": "Room Sensor 1",
+          "10": "Room Sensor 2",
+          "11": "Heat Source Outlet Sensor (R6)",
+          "12": "Heat Source Inlet Sensor (R24)",
+          "14": "Collector Sensor (R23)",
+          "15": "Low Pressure Sensor (R25)",
+          "16": "High Pressure Sensor (R26)",
+          "17": "Room Humidity 1",
+          "18": "Room Humidity 2",
+          "19": "Cooling Frost Protection Sensor",
+          "20": "Hot Gas Sensor",
+          "21": "Return Temperature Sensor (R2.1)",
+          "22": "Swimming Pool Sensor (R20)",
+          "23": "Passive Cooling Flow Sensor (R11)",
+          "24": "Passive Cooling Return Sensor (R4)",
+          "26": "Solar Storage Sensor (R22)",
+          "28": "Heating Demand Sensor (R2.2)",
+          "29": "RTM Econ",
+          "30": "Cooling Demand Sensor (R39)"
+        }
+      },
+      "Sperr_Wp_Wert": {
+        "name": "Lockout Messages",
+        "state": {
+          "0": "No Lockout",
+          "2": "Volume Flow",
+          "5": "Function Check",
+          "6": "High Temperature Limit",
+          "7": "System Check",
+          "8": "Cooling Changeover Delay",
+          "9": "Pump Lead Time",
+          "10": "Minimum Runtime",
+          "11": "Grid Load",
+          "12": "Switching Cycle Lockout",
+          "13": "Hot Water Reheating",
+          "14": "Regenerative",
+          "15": "Utility Lockout",
+          "16": "Soft Starter",
+          "17": "Flow",
+          "18": "Heat Pump Operating Limit",
+          "19": "High Pressure",
+          "20": "Low Pressure",
+          "21": "Heat Source Operating Limit",
+          "23": "System Limit",
+          "24": "Primary Circuit Load",
+          "25": "External Lockout",
+          "31": "Warm-Up",
+          "33": "EEV Initialization",
+          "34": "2nd Heat Generator Enabled",
+          "35": "Fault (see Fault Messages)"
+        }
+      },
+      "Smart_Grid": {
+        "name": "Smart Grid",
+        "state": {
+          "0": "Off",
+          "1": "Green",
+          "2": "Red",
+          "3": "Plus"
+        }
+      }
+    },
+    "number": {
+      "P_HK1_WK": {
+        "name": "1. Heating curve parallel shift"
+      },
+      "P_WW_SOLL": {
+        "name": "Hot Water Setpoint"
+      },
+      "P_WW_SOLLAB": {
+        "name": "Maximum Hot Water Setpoint"
+      },
+      "P_WW_MIN_TEMP": {
+        "name": "Minimum Hot Water Temperature"
+      }
+    },
+    "binary_sensor": {
+      "mqtt_connection": {
+        "name": "MQTT Connection"
+      },
+      "A_VD1": {
+        "name": "Compressor 1"
+      },
+      "A_VEN": {
+        "name": "Fan (M2)"
+      },
+      "A_PUP": {
+        "name": "Primary Pump (M11)"
+      },
+      "A_HUP1": {
+        "name": "Heating Pump (M13)"
+      },
+      "A_HUP2": {
+        "name": "Heating Pump (M15)"
+      },
+      "A_HUP3": {
+        "name": "Heating Pump (M20)"
+      },
+      "A_ZUP": {
+        "name": "Auxiliary Pump (M16)"
+      },
+      "A_WUP": {
+        "name": "Hot Water Pump (M18)"
+      },
+      "A_STF": {
+        "name": "Fault H5"
+      }
+    }
+  }
+}

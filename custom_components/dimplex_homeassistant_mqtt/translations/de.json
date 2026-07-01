@@ -1,0 +1,180 @@
+{
+  "entity": {
+    "sensor": {
+      "E_Aussen_T": {
+        "name": "Außentemperatur"
+      },
+      "E_Rueckl_T": {
+        "name": "Rücklauftemperatur"
+      },
+      "E_Vorl_T": {
+        "name": "Vorlauftemperatur"
+      },
+      "E_Ww_Fuehl": {
+        "name": "Warmwassertemperatur"
+      },
+      "Status_Wert": {
+        "name": "Wärmepumpenstatus",
+        "state": {
+          "0": "Aus",
+          "1": "Aus",
+          "2": "Heizen",
+          "3": "Schwimmbad",
+          "4": "Warmwasser",
+          "5": "Kühlen",
+          "10": "Abtauen",
+          "11": "Durchflussüberwachung",
+          "24": "Verzögerung Betriebsmodusumschaltung",
+          "30": "Sperre"
+        }
+      },
+      "Stoerung_Wert": {
+        "name": "Störmeldungen",
+        "state": {
+          "0": "kein Fehler",
+          "1": "Fehler N17.1",
+          "2": "Fehler N17.2",
+          "3": "Fehler N17.3",
+          "4": "Fehler N17.4",
+          "6": "Elektronisches Ex.Ventil",
+          "10": "WPIO",
+          "12": "Inverter",
+          "13": "WQIF",
+          "15": "Sensorik (siehe Kapitel Sensorfehler)",
+          "16": "Niederdruck Sole",
+          "19": "!Primärkreis",
+          "20": "!Abtauen",
+          "21": "!Niederdruck Sole",
+          "22": "!Warmwasser",
+          "23": "!Last Verdichter",
+          "24": "!Codierung",
+          "25": "!Niederdruck",
+          "26": "!Frostschutz",
+          "28": "!Hochdruck",
+          "29": "!Temperatur Differenz",
+          "30": "!Heißgasthermostat",
+          "31": "!Durchfluss"
+        }
+      },
+      "Fehler_Wert": {
+        "name": "Sensorfehler",
+        "state": {
+          "0": "kein Fehler",
+          "1": "Außenfühler (R1)",
+          "2": "Rücklauffühler (R2)",
+          "3": "Warmwasserfühler (R3)",
+          "4": "Codierung (R7)",
+          "5": "Vorlauffühler (R9)",
+          "6": "2. Heizkreisfühler (R5)",
+          "7": "3. Heizkreisfühler (R13)",
+          "8": "Regenerativfühler (R13)",
+          "9": "Raumfühler 1",
+          "10": "Raumfühler 2",
+          "11": "Fühler Wärmequellenaustritt (R6)",
+          "12": "Fühler Wärmequelleneintritt (R24)*",
+          "14": "Kollektorfühler (R23)",
+          "15": "Niederdrucksensor (R25)",
+          "16": "Hochdrucksensor (R26)",
+          "17": "Raumfeuchte 1",
+          "18": "Raumfeuchte 2",
+          "19": "Fühler Frostschutz-Kälte",
+          "20": "Heißgas",
+          "21": "Rücklauffühler (R2.1)",
+          "22": "Schwimmbadfühler (R20)",
+          "23": "Vorlauffühler Kühlen Passiv (R11)",
+          "24": "Rücklauffühler Kühlen Passiv (R4)",
+          "26": "Fühler Solarspeicher (R22)",
+          "28": "Anforderungsfühler Heizen (R2.2)",
+          "29": "RTM Econ",
+          "30": "Anforderungsfühler Kühlen (R39)"
+        }
+      },
+      "Sperr_Wp_Wert": {
+        "name": "Sperrmeldungen",
+        "state": {
+          "0": "keine Sperre",
+          "2": "Volumenstrom",
+          "5": "Funktionskontrolle",
+          "6": "Einsatzgrenze HT",
+          "7": "Systemkontrolle",
+          "8": "Verzögerung Umschaltung Kühlen",
+          "9": "Pumpenvorlauf",
+          "10": "Mindeststandzeit",
+          "11": "Netzbelastung",
+          "12": "Schaltspielsperre",
+          "13": "Warmwasser Nacherwärmung",
+          "14": "Regenerativ",
+          "15": "EVU-Sperre",
+          "16": "Sanftanlasser",
+          "17": "Durchfluss",
+          "18": "Einsatzgrenze Wärmepumpe",
+          "19": "Hochdruck",
+          "20": "Niederdruck",
+          "21": "Einsatzgrenze Wärmequelle",
+          "23": "System Grenze",
+          "24": "Last Primärkreis",
+          "25": "Sperre Extern",
+          "31": "Aufwärmen",
+          "33": "EvD Initialisierung",
+          "34": "2. Wärmeerzeuger freigegeben",
+          "35": "Störung (siehe Kapitel Störmeldungen)"
+        }
+      },
+      "Smart_Grid": {
+        "name": "Smart Grid",
+        "state": {
+          "0": "Aus",
+          "1": "Grün",
+          "2": "Rot",
+          "3": "Plus"
+        }
+      }
+    },
+    "number": {
+      "P_HK1_WK": {
+        "name": "1. Heizkurve Parallelverschiebung"
+      },
+      "P_WW_SOLL": {
+        "name": "Warmwasser Solltemperatur"
+      },
+      "P_WW_SOLLAB": {
+        "name": "Maximale Warmwasser Solltemperatur"
+      },
+      "P_WW_MIN_TEMP": {
+        "name": "Minimale Warmwassertemperatur"
+      }
+    },
+    "binary_sensor": {
+      "mqtt_connection": {
+        "name": "Mqtt Verbindung"
+      },
+      "A_VD1": {
+        "name": "Verdichter 1"
+      },
+      "A_VEN": {
+        "name": "Ventilator (M2)"
+      },
+      "A_PUP": {
+        "name": "Primärpumpe (M11)"
+      },
+      "A_HUP1": {
+        "name": "Heizungspumpe (M13)"
+      },
+      "A_HUP2": {
+        "name": "Heizungspumpe (M15)"
+      },
+      "A_HUP3": {
+        "name": "Heizungspumpe (M20)"
+      },
+      "A_ZUP": {
+        "name": "Zusatzumwälzpumpe (M16)"
+      },
+      "A_WUP": {
+        "name": "Warmwasserpumpe (M18)"
+      },
+      "A_STF": {
+        "name": "Störung H5"
+      }
+    }
+  }
+}

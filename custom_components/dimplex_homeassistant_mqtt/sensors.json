@@ -1,0 +1,166 @@
+{
+  "heating": {
+    "1301a": {
+      "id": "1301a",
+      "key": "E_Aussen_T",
+      "device_class": "temperature",
+      "unit": "celsius",
+      "state_class": "measurement",
+      "read_only": true
+    },
+    "1294a": {
+      "id": "1294a",
+      "key": "E_Rueckl_T",
+      "device_class": "temperature",
+      "unit": "celsius",
+      "state_class": "measurement",
+      "read_only": true
+    },
+    "767i":{
+      "id": "767i",
+      "key": "P_HK1_WK",
+      "device_class": "temperature",
+      "unit": "kelvin",
+      "state_class": "measurement",
+      "read_only": false,
+      "min": 0,
+      "max": 38,
+      "step": 1,
+      "offset": -19
+    },
+    "1300a": {
+      "id": "1300a",
+      "key": "E_Vorl_T",
+      "device_class": "temperature",
+      "unit": "celsius",
+      "state_class": "measurement",
+      "read_only": true
+    }
+  },
+
+  "hot_water": {
+    "1305a": {
+      "id": "1305a",
+      "key": "E_Ww_Fuehl",
+      "device_class": "temperature",
+      "unit": "celsius",
+      "state_class": "measurement",
+      "read_only": true
+    },
+    "1042i": {
+      "id": "1042i",
+      "key": "P_WW_SOLL",
+      "device_class": "temperature",
+      "unit": "celsius",
+      "state_class": "measurement",
+      "read_only": false,
+      "min": 30,
+      "max": 60
+    },
+    "1044i": {
+      "id": "1044i",
+      "key": "P_WW_SOLLAB",
+      "device_class": "temperature",
+      "unit": "celsius",
+      "state_class": "measurement",
+      "read_only": false,
+      "min": 30,
+      "max": 85
+    },
+    "1045i": {
+      "id": "1045i",
+      "key": "P_WW_MIN_TEMP",
+      "device_class": "temperature",
+      "unit": "celsius",
+      "state_class": "measurement",
+      "read_only": false,
+      "min": 10,
+      "max": 45
+    }
+  },
+
+  "status": {
+    "530i": {
+      "id": "530i",
+      "key": "Status_Wert",
+      "read_only": true
+    },
+    "531i": {
+      "id": "531i",
+      "key": "Stoerung_Wert",
+      "read_only": true
+    },
+    "532i": {
+      "id": "532i",
+      "key": "Fehler_Wert",
+      "read_only": true
+    },
+    "533i": {
+      "id": "533i",
+      "key": "Sperr_Wp_Wert",
+      "read_only": true
+    },
+    "1501i": {
+      "id": "1501i",
+      "key": "Smart_Grid",
+      "read_only": true
+    }
+  },
+
+  "actuators": {
+    "1500d": {
+      "id": "1500d",
+      "key": "A_VD1",
+      "device_class": "running",
+      "read_only": true
+    },
+    "1502d": {
+      "id": "1502d",
+      "key": "A_VEN",
+      "device_class": "running",
+      "read_only": true
+    },
+    "1506d": {
+      "id": "1506d",
+      "key": "A_PUP",
+      "device_class": "running",
+      "read_only": true
+    },
+    "1512d": {
+      "id": "1512d",
+      "key": "A_HUP1",
+      "device_class": "running",
+      "read_only": true
+    },
+    "1514d": {
+      "id": "1514d",
+      "key": "A_HUP2",
+      "device_class": "running",
+      "read_only": true
+    },
+    "1515d": {
+      "id": "1515d",
+      "key": "A_HUP3",
+      "device_class": "running",
+      "read_only": true
+    },
+    "1516d": {
+      "id": "1516d",
+      "key": "A_ZUP",
+      "device_class": "running",
+      "read_only": true
+    },
+    "1517d": {
+      "id": "1517d",
+      "key": "A_WUP",
+      "device_class": "running",
+      "read_only": true
+    },
+    "1523d": {
+      "id": "1523d",
+      "key": "A_STF",
+      "device_class": "running",
+      "read_only": true
+    }
+  }
+}
