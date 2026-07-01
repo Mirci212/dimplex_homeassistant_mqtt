@@ -1,6 +1,8 @@
-# Dimplex MQTT
+# Dimplex Home Assistant MQTT
 
-Home Assistant custom integration for Dimplex heating systems via MQTT.
+Official Home Assistant custom integration for Dimplex heating systems via MQTT.
+
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=ConnectivityGDD&repository=dimplex_homeassistant_mqtt&category=integration)
 
 The integration connects directly to a Dimplex MQTT Gateway and exposes heating system data as Home Assistant entities for monitoring, control, dashboards, and automations.
 
@@ -69,7 +71,13 @@ Restart Home Assistant.
 4. Enter:
 
    - MQTT Host
-   - Password
+   - Password 
+   
+   The default password can be obtained from **Service Data** within the Dimplex Home App.
+      - **Android**: https://play.google.com/store/apps/details?id=de.glendimplex.dimplexhome
+      - **iOS**: https://apps.apple.com/de/app/dimplex-home/id1511894545
+      - **Windows**: https://apps.microsoft.com/detail/9n7km4dl2k02
+
 
 5. Finish the setup wizard.
 
