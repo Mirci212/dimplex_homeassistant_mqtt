@@ -3,6 +3,7 @@
 !.gitignore
 !LICENSE
 !README.md
+!hacs.json
 !custom_components/
 !custom_components/dimplex_homeassistant_mqtt/
 !custom_components/dimplex_homeassistant_mqtt/**
