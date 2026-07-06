@@ -5,7 +5,7 @@ from .coordinator import DimplexMqttCoordinator
 
 _LOGGER = logging.getLogger(__name__)
 
-PLATFORMS = ["sensor", "binary_sensor", "number"]
+PLATFORMS = ["sensor", "binary_sensor", "number", "select"]
 
 
 async def async_setup_entry(hass, entry):

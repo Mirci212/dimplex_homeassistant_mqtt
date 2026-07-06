@@ -33,7 +33,7 @@ def _walk_number_config(node):
             yield from _walk_number_config(item)
         return
 
-    if not isinstance(node, dict):
+    if not isinstance(node, dict) or isinstance(node.get("select"), dict):
         return
 
     if "id" in node:

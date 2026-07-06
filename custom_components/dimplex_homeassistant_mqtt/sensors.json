@@ -81,8 +81,8 @@
 
   "status": {
     "530i": {
-      "id": "530i",
-      "key": "Status_Wert",
+      "id": "1586i",
+      "key": "Anz_Status_Wert",
       "read_only": true
     },
     "531i": {
@@ -104,6 +104,14 @@
       "id": "1501i",
       "key": "Smart_Grid",
       "read_only": true
+    },
+    "714i": {
+      "id": "714i",
+      "key": "BA_aktiv",
+      "read_only": false,
+      "select": {
+        "range": "0,1,2,3,4,5,6"
+      }
     }
   },
 
