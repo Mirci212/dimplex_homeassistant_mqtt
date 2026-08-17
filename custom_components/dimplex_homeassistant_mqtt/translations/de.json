@@ -132,7 +132,13 @@
     },
     "number": {
       "P_HK1_WK": {
-        "name": "1. Heizkurve Parallelverschiebung"
+        "name": "1. Heizkreis Parallelverschiebung"
+      },
+      "P_HK2_WK": {
+        "name": "2. Heizkreis Parallelverschiebung"
+      },
+      "P_HK3_WK": {
+        "name": "3. Heizkreis Parallelverschiebung"
       },
       "P_WW_SOLL": {
         "name": "Warmwasser Solltemperatur"

@@ -132,7 +132,13 @@
     },
     "number": {
       "P_HK1_WK": {
-        "name": "1. Heating curve parallel shift"
+        "name": "1. Heating circuit parallel shift"
+      },
+      "P_HK2_WK": {
+        "name": "2. Heating circuit parallel shift"
+      },
+      "P_HK3_WK": {
+        "name": "3. Heating circuit parallel shift"
       },
       "P_WW_SOLL": {
         "name": "Hot Water Setpoint"
