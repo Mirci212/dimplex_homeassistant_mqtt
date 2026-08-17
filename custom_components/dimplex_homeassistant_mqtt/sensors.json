@@ -28,6 +28,30 @@
       "step": 1,
       "offset": -19
     },
+    "768i": {
+      "id": "852i",
+      "key": "P_HK2_WK",
+      "device_class": "temperature",
+      "unit": "kelvin",
+      "state_class": "measurement",
+      "read_only": false,
+      "min": 0,
+      "max": 38,
+      "step": 1,
+      "offset": -19
+    },
+    "769i": {
+      "id": "932i",
+      "key": "P_HK3_WK",
+      "device_class": "temperature",
+      "unit": "kelvin",
+      "state_class": "measurement",
+      "read_only": false,
+      "min": 0,
+      "max": 38,
+      "step": 1,
+      "offset": -19
+    },
     "1300a": {
       "id": "1300a",
       "key": "E_Vorl_T",
