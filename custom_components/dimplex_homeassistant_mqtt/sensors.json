@@ -29,7 +29,7 @@
       "offset": -19
     },
     "768i": {
-      "id": "768i",
+      "id": "852i",
       "key": "P_HK2_WK",
       "device_class": "temperature",
       "unit": "kelvin",
@@ -41,7 +41,7 @@
       "offset": -19
     },
     "769i": {
-      "id": "769i",
+      "id": "932i",
       "key": "P_HK3_WK",
       "device_class": "temperature",
       "unit": "kelvin",
