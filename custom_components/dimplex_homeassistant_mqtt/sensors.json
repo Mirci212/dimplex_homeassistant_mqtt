@@ -28,7 +28,7 @@
       "step": 1,
       "offset": -19
     },
-    "768i": {
+    "852i": {
       "id": "852i",
       "key": "P_HK2_WK",
       "device_class": "temperature",
@@ -40,7 +40,7 @@
       "step": 1,
       "offset": -19
     },
-    "769i": {
+    "932i": {
       "id": "932i",
       "key": "P_HK3_WK",
       "device_class": "temperature",
