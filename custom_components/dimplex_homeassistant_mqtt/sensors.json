@@ -1,55 +1,269 @@
 {
   "heating": {
-    "1301a": { "id": "1301a", "key": "E_Aussen_T", "device_class": "temperature", "unit": "celsius", "state_class": "measurement", "read_only": true },
-    "1294a": { "id": "1294a", "key": "E_Rueckl_T", "device_class": "temperature", "unit": "celsius", "state_class": "measurement", "read_only": true },
-    "767i": { "id": "767i", "key": "P_HK1_WK", "device_class": "temperature", "unit": "kelvin", "state_class": "measurement", "read_only": false, "min": 0, "max": 38, "step": 1, "offset": -19 },
-    "768i": { "id": "768i", "key": "P_HK2_WK", "device_class": "temperature", "unit": "kelvin", "state_class": "measurement", "read_only": false, "min": 0, "max": 38, "step": 1, "offset": -19 },
-    "769i": { "id": "769i", "key": "P_HK3_WK", "device_class": "temperature", "unit": "kelvin", "state_class": "measurement", "read_only": false, "min": 0, "max": 38, "step": 1, "offset": -19 },
-    "1300a": { "id": "1300a", "key": "E_Vorl_T", "device_class": "temperature", "unit": "celsius", "state_class": "measurement", "read_only": true }
+    "1301a": {
+      "id": "1301a",
+      "key": "E_Aussen_T",
+      "device_class": "temperature",
+      "unit": "celsius",
+      "state_class": "measurement",
+      "read_only": true
+    },
+    "1294a": {
+      "id": "1294a",
+      "key": "E_Rueckl_T",
+      "device_class": "temperature",
+      "unit": "celsius",
+      "state_class": "measurement",
+      "read_only": true
+    },
+    "767i": {
+      "id": "767i",
+      "key": "P_HK1_WK",
+      "device_class": "temperature",
+      "unit": "kelvin",
+      "state_class": "measurement",
+      "read_only": false,
+      "min": 0,
+      "max": 38,
+      "step": 1,
+      "offset": -19
+    },
+    "852i": {
+      "id": "852i",
+      "key": "P_HK2_WK",
+      "device_class": "temperature",
+      "unit": "kelvin",
+      "state_class": "measurement",
+      "read_only": false,
+      "min": 0,
+      "max": 38,
+      "step": 1,
+      "offset": -19
+    },
+    "932i": {
+      "id": "932i",
+      "key": "P_HK3_WK",
+      "device_class": "temperature",
+      "unit": "kelvin",
+      "state_class": "measurement",
+      "read_only": false,
+      "min": 0,
+      "max": 38,
+      "step": 1,
+      "offset": -19
+    },
+    "1300a": {
+      "id": "1300a",
+      "key": "E_Vorl_T",
+      "device_class": "temperature",
+      "unit": "celsius",
+      "state_class": "measurement",
+      "read_only": true
+    }
   },
 
   "hot_water": {
-    "1305a": { "id": "1305a", "key": "E_Ww_Fuehl", "device_class": "temperature", "unit": "celsius", "state_class": "measurement", "read_only": true },
-    "1042i": { "id": "1042i", "key": "P_WW_SOLL", "device_class": "temperature", "unit": "celsius", "state_class": "measurement", "read_only": false, "min": 30, "max": 60 },
-    "1044i": { "id": "1044i", "key": "P_WW_SOLLAB", "device_class": "temperature", "unit": "celsius", "state_class": "measurement", "read_only": false, "min": 30, "max": 85 },
-    "1045i": { "id": "1045i", "key": "P_WW_MIN_TEMP", "device_class": "temperature", "unit": "celsius", "state_class": "measurement", "read_only": false, "min": 10, "max": 45 }
+    "1305a": {
+      "id": "1305a",
+      "key": "E_Ww_Fuehl",
+      "device_class": "temperature",
+      "unit": "celsius",
+      "state_class": "measurement",
+      "read_only": true
+    },
+    "1042i": {
+      "id": "1042i",
+      "key": "P_WW_SOLL",
+      "device_class": "temperature",
+      "unit": "celsius",
+      "state_class": "measurement",
+      "read_only": false,
+      "min": 30,
+      "max": 60
+    },
+    "1044i": {
+      "id": "1044i",
+      "key": "P_WW_SOLLAB",
+      "device_class": "temperature",
+      "unit": "celsius",
+      "state_class": "measurement",
+      "read_only": false,
+      "min": 30,
+      "max": 85
+    },
+    "1045i": {
+      "id": "1045i",
+      "key": "P_WW_MIN_TEMP",
+      "device_class": "temperature",
+      "unit": "celsius",
+      "state_class": "measurement",
+      "read_only": false,
+      "min": 10,
+      "max": 45
+    }
   },
 
   "status": {
-    "530i": { "id": "1586i", "key": "Anz_Status_Wert", "read_only": true },
-    "531i": { "id": "531i", "key": "Stoerung_Wert", "read_only": true },
-    "532i": { "id": "532i", "key": "Fehler_Wert", "read_only": true },
-    "533i": { "id": "533i", "key": "Sperr_Wp_Wert", "read_only": true },
-    "1501i": { "id": "1501i", "key": "Smart_Grid", "read_only": true },
-    "714i": { "id": "714i", "key": "BA_aktiv", "read_only": false, "select": { "range": "0,1,2,3,4,5,6" } }
+    "530i": {
+      "id": "1586i",
+      "key": "Anz_Status_Wert",
+      "read_only": true
+    },
+    "531i": {
+      "id": "531i",
+      "key": "Stoerung_Wert",
+      "read_only": true
+    },
+    "532i": {
+      "id": "532i",
+      "key": "Fehler_Wert",
+      "read_only": true
+    },
+    "533i": {
+      "id": "533i",
+      "key": "Sperr_Wp_Wert",
+      "read_only": true
+    },
+    "1501i": {
+      "id": "1501i",
+      "key": "Smart_Grid",
+      "read_only": true
+    },
+    "714i": {
+      "id": "714i",
+      "key": "BA_aktiv",
+      "read_only": false,
+      "select": {
+        "range": "0,1,2,3,4,5,6"
+      }
+    }
   },
 
   "actuators": {
-    "1500d": { "id": "1500d", "key": "A_VD1", "name": "Verdichter 1", "device_class": "running", "read_only": true },
-    "1502d": { "id": "1502d", "key": "A_VEN", "name": "Ventilator", "device_class": "running", "read_only": true },
-    "1506d": { "id": "1506d", "key": "A_PUP", "name": "Primärpumpe M11", "device_class": "running", "read_only": true },
-    "1512d": { "id": "1512d", "key": "A_HUP1", "name": "Heizkreispumpe 1 M13", "device_class": "running", "read_only": true },
-    "1514d": { "id": "1514d", "key": "A_HUP2", "name": "Heizkreispumpe 2 M15", "device_class": "running", "read_only": true },
-    "1515d": { "id": "1515d", "key": "A_HUP3", "name": "Heizkreispumpe 3 M20", "device_class": "running", "read_only": true },
-    "1516d": { "id": "1516d", "key": "A_ZUP", "name": "Zusatzpumpe", "device_class": "running", "read_only": true },
-    "1517d": { "id": "1517d", "key": "A_WUP", "name": "Warmwasserladepumpe M18", "device_class": "running", "read_only": true },
-    "1523d": { "id": "1523d", "key": "A_STF", "name": "Flanschheizung E9", "device_class": "running", "read_only": true }
+    "1500d": {
+      "id": "1500d",
+      "key": "A_VD1",
+      "device_class": "running",
+      "read_only": true
+    },
+    "1502d": {
+      "id": "1502d",
+      "key": "A_VEN",
+      "device_class": "running",
+      "read_only": true
+    },
+    "1506d": {
+      "id": "1506d",
+      "key": "A_PUP",
+      "device_class": "running",
+      "read_only": true
+    },
+    "1512d": {
+      "id": "1512d",
+      "key": "A_HUP1",
+      "device_class": "running",
+      "read_only": true
+    },
+    "1514d": {
+      "id": "1514d",
+      "key": "A_HUP2",
+      "device_class": "running",
+      "read_only": true
+    },
+    "1515d": {
+      "id": "1515d",
+      "key": "A_HUP3",
+      "device_class": "running",
+      "read_only": true
+    },
+    "1516d": {
+      "id": "1516d",
+      "key": "A_ZUP",
+      "device_class": "running",
+      "read_only": true
+    },
+    "1517d": {
+      "id": "1517d",
+      "key": "A_WUP",
+      "device_class": "running",
+      "read_only": true
+    },
+    "1523d": {
+      "id": "1523d",
+      "key": "A_STF",
+      "device_class": "running",
+      "read_only": true
+    }
   },
 
   "operating_hours": {
-    "1617i": { "id": "1617i", "key": "B_Verdichter_1_Std", "name": "Laufzeit Verdichter 1", "device_class": "duration", "unit": "h", "state_class": "total_increasing", "read_only": true },
-    "1613i": { "id": "1613i", "key": "B_Primaerpumpe_Std", "name": "Laufzeit Primärpumpe", "device_class": "duration", "unit": "h", "state_class": "total_increasing", "read_only": true },
-    "1612i": { "id": "1612i", "key": "B_Heizungspumpe_Std", "name": "Laufzeit Heizungspumpe", "device_class": "duration", "unit": "h", "state_class": "total_increasing", "read_only": true },
-    "1790i": { "id": "1790i", "key": "B_Zusatzpumpe_Std", "name": "Laufzeit Zusatzpumpe", "device_class": "duration", "unit": "h", "state_class": "total_increasing", "read_only": true },
-    "1788i": { "id": "1788i", "key": "B_Warmwasserpumpe_Std", "name": "Laufzeit Warmwasserpumpe", "device_class": "duration", "unit": "h", "state_class": "total_increasing", "read_only": true }
+    "1617i": {
+      "id": "1617i",
+      "key": "B_Verdichter_1_Std",
+      "device_class": "duration",
+      "unit": "h",
+      "state_class": "total_increasing",
+      "read_only": true
+    },
+    "1613i": {
+      "id": "1613i",
+      "key": "B_Primaerpumpe_Std",
+      "device_class": "duration",
+      "unit": "h",
+      "state_class": "total_increasing",
+      "read_only": true
+    },
+    "1612i": {
+      "id": "1612i",
+      "key": "B_Heizungspumpe_Std",
+      "device_class": "duration",
+      "unit": "h",
+      "state_class": "total_increasing",
+      "read_only": true
+    },
+    "1790i": {
+      "id": "1790i",
+      "key": "B_Zusatzpumpe_Std",
+      "device_class": "duration",
+      "unit": "h",
+      "state_class": "total_increasing",
+      "read_only": true
+    },
+    "1788i": {
+      "id": "1788i",
+      "key": "B_Warmwasserpumpe_Std",
+      "device_class": "duration",
+      "unit": "h",
+      "state_class": "total_increasing",
+      "read_only": true
+    }
   },
 
   "cycles": {
-    "1575i": { "id": "1575i", "key": "C_Verdichter_1_Gesamt", "name": "Taktungen Verdichter 1", "state_class": "total_increasing", "read_only": true }
+    "1575i": {
+      "id": "1575i",
+      "key": "C_Verdichter_1_Gesamt",
+      "state_class": "total_increasing",
+      "read_only": true
+    }
   },
 
   "energy": {
-    "1672i": { "id": "1672i", "key": "E_Erzeugt_Heizen", "name": "Erzeugte Wärmemenge Heizen", "device_class": "energy", "unit": "kWh", "state_class": "total_increasing", "read_only": true },
-    "1669i": { "id": "1669i", "key": "E_Erzeugt_WW", "name": "Erzeugte Wärmemenge Warmwasser", "device_class": "energy", "unit": "kWh", "state_class": "total_increasing", "read_only": true }
+    "1672i": {
+      "id": "1672i",
+      "key": "E_Erzeugt_Heizen",
+      "device_class": "energy",
+      "unit": "kWh",
+      "state_class": "total_increasing",
+      "read_only": true
+    },
+    "1669i": {
+      "id": "1669i",
+      "key": "E_Erzeugt_WW",
+      "device_class": "energy",
+      "unit": "kWh",
+      "state_class": "total_increasing",
+      "read_only": true
+    }
   }
 }
