@@ -34,13 +34,7 @@
       "E_Erzeugt_Heizen": {
         "name": "Erzeugte Wärmemenge Heizen"
       },
-      "E_Erzeugt_Heizen_High": {
-        "name": "Erzeugte Wärmemenge Heizen"
-      },
       "E_Erzeugt_WW": {
-        "name": "Erzeugte Wärmemenge Warmwasser"
-      },
-      "E_Erzeugt_WW_High": {
         "name": "Erzeugte Wärmemenge Warmwasser"
       },
       "E_Umweltenergie": {
