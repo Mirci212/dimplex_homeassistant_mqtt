@@ -19,13 +19,7 @@
       "E_Erzeugt_Heizen": {
         "name": "Generated heating energy"
       },
-      "E_Erzeugt_Heizen_High": {
-        "name": "Generated heating energy"
-      },
       "E_Erzeugt_WW": {
-        "name": "Generated hot water energy"
-      },
-      "E_Erzeugt_WW_High": {
         "name": "Generated hot water energy"
       },
       "Anz_Status_Wert": {
