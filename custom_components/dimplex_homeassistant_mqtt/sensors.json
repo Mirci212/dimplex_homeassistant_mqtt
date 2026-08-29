@@ -257,9 +257,25 @@
       "state_class": "total_increasing",
       "read_only": true
     },
+    "1660i": {
+      "id": "1660i",
+      "key": "E_Erzeugt_Heizen_Ges",
+      "device_class": "energy",
+      "unit": "kWh",
+      "state_class": "total_increasing",
+      "read_only": true
+    },
+    "1665i": {
+      "id": "1665i",
+      "key": "E_Erzeugt_WW",
+      "device_class": "energy",
+      "unit": "kWh",
+      "state_class": "total_increasing",
+      "read_only": true
+    },
     "1669i": {
       "id": "1669i",
-      "key": "E_Erzeugt_WW",
+      "key": "E_Erzeugt_WW_Ges",
       "device_class": "energy",
       "unit": "kWh",
       "state_class": "total_increasing",
