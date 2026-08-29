@@ -37,12 +37,7 @@ UNITS = {
     "celsius": UnitOfTemperature.CELSIUS,
     "C": UnitOfTemperature.CELSIUS,
     "h": UnitOfTime.HOURS,
-    "hour": UnitOfTime.HOURS,
-    "hours": UnitOfTime.HOURS,
-    "Wh": UnitOfEnergy.WATT_HOUR,
-    "wh": UnitOfEnergy.WATT_HOUR,
-    "kWh": UnitOfEnergy.KILO_WATT_HOUR,
-    "kwh": UnitOfEnergy.KILO_WATT_HOUR,
+    "kWh": UnitOfEnergy.KILO_WATT_HOUR
 }
 
 
