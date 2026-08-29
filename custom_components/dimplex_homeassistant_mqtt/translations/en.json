@@ -13,6 +13,21 @@
       "E_Ww_Fuehl": {
         "name": "Hot Water Temperature"
       },
+      "C_Verdichter_1_Gesamt": {
+        "name": "Compressor cycles"
+      },
+      "E_Erzeugt_Heizen": {
+        "name": "Generated heating energy"
+      },
+      "E_Erzeugt_Heizen_High": {
+        "name": "Generated heating energy"
+      },
+      "E_Erzeugt_WW": {
+        "name": "Generated hot water energy"
+      },
+      "E_Erzeugt_WW_High": {
+        "name": "Generated hot water energy"
+      },
       "Anz_Status_Wert": {
         "name": "Heat Pump Status",
         "state": {

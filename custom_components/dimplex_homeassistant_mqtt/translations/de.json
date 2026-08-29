@@ -13,6 +13,39 @@
       "E_Ww_Fuehl": {
         "name": "Warmwassertemperatur"
       },
+      "C_Verdichter_1_Gesamt": {
+        "name": "Taktungen Verdichter 1"
+      },
+      "B_Verdichter_1_Std": {
+        "name": "Laufzeit Verdichter 1"
+      },
+      "B_Primaerpumpe_Std": {
+        "name": "Laufzeit Primärpumpe"
+      },
+      "B_Heizungspumpe_Std": {
+        "name": "Laufzeit Heizungspumpe"
+      },
+      "B_Zusatzpumpe_Std": {
+        "name": "Laufzeit Zusatzpumpe"
+      },
+      "B_Warmwasserpumpe_Std": {
+        "name": "Laufzeit Warmwasserpumpe"
+      },
+      "E_Erzeugt_Heizen": {
+        "name": "Erzeugte Wärmemenge Heizen"
+      },
+      "E_Erzeugt_Heizen_High": {
+        "name": "Erzeugte Wärmemenge Heizen"
+      },
+      "E_Erzeugt_WW": {
+        "name": "Erzeugte Wärmemenge Warmwasser"
+      },
+      "E_Erzeugt_WW_High": {
+        "name": "Erzeugte Wärmemenge Warmwasser"
+      },
+      "E_Umweltenergie": {
+        "name": "Umweltenergie"
+      },
       "Anz_Status_Wert": {
         "name": "Wärmepumpenstatus",
         "state": {

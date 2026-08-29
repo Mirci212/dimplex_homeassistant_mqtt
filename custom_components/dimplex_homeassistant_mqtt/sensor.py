@@ -12,7 +12,7 @@ from homeassistant.components.sensor import (
     SensorEntityDescription,
     SensorStateClass,
 )
-from homeassistant.const import UnitOfTemperature
+from homeassistant.const import UnitOfEnergy, UnitOfTemperature, UnitOfTime
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
 from .const import DOMAIN
@@ -23,6 +23,8 @@ TRANSLATION_DIR = Path(__file__).parent / "translations"
 
 DEVICE_CLASSES = {
     "temperature": SensorDeviceClass.TEMPERATURE,
+    "duration": SensorDeviceClass.DURATION,
+    "energy": SensorDeviceClass.ENERGY,
 }
 
 STATE_CLASSES = {
@@ -33,6 +35,14 @@ STATE_CLASSES = {
 
 UNITS = {
     "celsius": UnitOfTemperature.CELSIUS,
+    "C": UnitOfTemperature.CELSIUS,
+    "h": UnitOfTime.HOURS,
+    "hour": UnitOfTime.HOURS,
+    "hours": UnitOfTime.HOURS,
+    "Wh": UnitOfEnergy.WATT_HOUR,
+    "wh": UnitOfEnergy.WATT_HOUR,
+    "kWh": UnitOfEnergy.KILO_WATT_HOUR,
+    "kwh": UnitOfEnergy.KILO_WATT_HOUR,
 }
 
 
