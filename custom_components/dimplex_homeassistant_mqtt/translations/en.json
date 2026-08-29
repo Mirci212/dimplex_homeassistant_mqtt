@@ -16,11 +16,32 @@
       "C_Verdichter_1_Gesamt": {
         "name": "Compressor cycles"
       },
+      "B_Verdichter_1_Std": {
+        "name": "Compressor 1 runtime"
+      },
+      "B_Primaerpumpe_Std": {
+        "name": "Primary pump runtime"
+      },
+      "B_Heizungspumpe_Std": {
+        "name": "Heating pump runtime"
+      },
+      "B_Zusatzpumpe_Std": {
+        "name": "Auxiliary pump runtime"
+      },
+      "B_Warmwasserpumpe_Std": {
+        "name": "Hot water pump runtime"
+      },
       "E_Erzeugt_Heizen": {
         "name": "Generated heating energy"
       },
+      "E_Erzeugt_Heizen_Ges": {
+        "name": "Generated heating energy total"
+      },
       "E_Erzeugt_WW": {
         "name": "Generated hot water energy"
+      },
+      "E_Erzeugt_WW_Ges": {
+        "name": "Generated hot water energy total"
       },
       "Anz_Status_Wert": {
         "name": "Heat Pump Status",

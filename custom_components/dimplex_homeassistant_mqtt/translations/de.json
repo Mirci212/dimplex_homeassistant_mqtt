@@ -34,11 +34,14 @@
       "E_Erzeugt_Heizen": {
         "name": "Erzeugte Wärmemenge Heizen"
       },
+      "E_Erzeugt_Heizen_Ges": {
+        "name": "Erzeugte Wärmemenge Heizen Gesamt"
+      },
       "E_Erzeugt_WW": {
         "name": "Erzeugte Wärmemenge Warmwasser"
       },
-      "E_Umweltenergie": {
-        "name": "Umweltenergie"
+      "E_Erzeugt_WW_Ges": {
+        "name": "Erzeugte Wärmemenge Warmwasser Gesamt"
       },
       "Anz_Status_Wert": {
         "name": "Wärmepumpenstatus",
