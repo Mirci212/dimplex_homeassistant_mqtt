@@ -277,6 +277,8 @@ class DimplexMqttClient:
                 for candidate in {str(key), str(raw_id), str(name)}:
                     if candidate:
                         result[candidate] = converted
+                        if candidate[-1:] in ("i", "u"):
+                            result[candidate[:-1] + ("u" if candidate[-1] == "i" else "i")] = converted
 
         return result
 
