@@ -280,8 +280,8 @@
       "min": 10,
       "max": 45
     },
-    "1043u": {
-      "id": "1043u",
+    "1043i": {
+      "id": "1043i",
       "key": "P_WW_Hysterese",
       "unit": "celsius",
       "read_only": false,
@@ -294,23 +294,26 @@
     "700a": {
       "id": "700a",
       "key": "P_HK1_Raum_T",
+      "device_class": "temperature",
       "unit": "celsius",
       "read_only": false,
       "min": 15,
       "max": 30
     },
-    "768u": {
-      "id": "768u",
+    "768i": {
+      "id": "768i",
       "key": "P_HK1_Festwert_T",
+      "device_class": "temperature",
       "unit": "celsius",
       "read_only": false,
       "installer_only": true,
       "min": 18,
       "max": 60
     },
-    "766u": {
-      "id": "766u",
+    "766i": {
+      "id": "766i",
       "key": "P_HK1_Heizkurvenendpunkt",
+      "device_class": "temperature",
       "unit": "celsius",
       "read_only": false,
       "installer_only": true,
@@ -320,6 +323,7 @@
     "701a": {
       "id": "701a",
       "key": "P_HK1_Hysterese",
+      "device_class": "temperature",
       "unit": "celsius",
       "read_only": false,
       "installer_only": true,
@@ -327,36 +331,40 @@
       "max": 5,
       "step": 0.5
     },
-    "773u": {
-      "id": "773u",
+    "773i": {
+      "id": "773i",
       "key": "P_HK1_Kuehlung_15",
+      "device_class": "temperature",
       "unit": "celsius",
       "read_only": false,
       "installer_only": true,
       "min": 10,
       "max": 35
     },
-    "509u": {
-      "id": "509u",
+    "509i": {
+      "id": "509i",
       "key": "P_HK1_Kuehlung_35",
+      "device_class": "temperature",
       "unit": "celsius",
       "read_only": false,
       "installer_only": true,
       "min": 10,
       "max": 35
     },
-    "851u": {
-      "id": "851u",
+    "851i": {
+      "id": "851i",
       "key": "P_HK2_Heizkurvenendpunkt",
+      "device_class": "temperature",
       "unit": "celsius",
       "read_only": false,
       "installer_only": true,
       "min": 20,
       "max": 70
     },
-    "853u": {
-      "id": "853u",
+    "853i": {
+      "id": "853i",
       "key": "P_HK2_Festwert_T",
+      "device_class": "temperature",
       "unit": "celsius",
       "read_only": false,
       "installer_only": true,
@@ -366,6 +374,7 @@
     "564a": {
       "id": "564a",
       "key": "P_WZE_Mischer_Hysterese",
+      "device_class": "temperature",
       "unit": "celsius",
       "read_only": false,
       "installer_only": true,
@@ -373,17 +382,18 @@
       "max": 2,
       "step": 0.5
     },
-    "750u": {
-      "id": "750u",
+    "750i": {
+      "id": "750i",
       "key": "P_WZE_Grenztemp_Parallel",
+      "device_class": "temperature",
       "unit": "celsius",
       "read_only": false,
       "installer_only": true,
       "min": -25,
       "max": 35
     },
-    "751u": {
-      "id": "751u",
+    "751i": {
+      "id": "751i",
       "key": "P_WZE_Grenztemp_Alternativ",
       "unit": "min",
       "read_only": false,
@@ -391,49 +401,51 @@
       "min": 30,
       "max": 85
     },
-    "931u": {
-      "id": "931u",
+    "931i": {
+      "id": "931i",
       "key": "P_HK3_Heizkurvenendpunkt",
+      "device_class": "temperature",
       "unit": "celsius",
       "read_only": false,
       "installer_only": true,
       "min": 20,
       "max": 70
     },
-    "933u": {
-      "id": "933u",
+    "933i": {
+      "id": "933i",
       "key": "P_HK3_Festwert_T",
+      "device_class": "temperature",
       "unit": "celsius",
       "read_only": false,
       "installer_only": true,
       "min": 20,
       "max": 60
     },
-    "715u": {
-      "id": "715u",
+    "715i": {
+      "id": "715i",
       "key": "P_Anzahl_Partystunden",
       "unit": "h",
       "read_only": false,
       "min": 0,
       "max": 72
     },
-    "1108u": {
-      "id": "1108u",
+    "1108i": {
+      "id": "1108i",
       "key": "P_Anzahl_Urlaubstage",
       "unit": "day",
       "read_only": false,
       "min": 0,
       "max": 150
     },
-    "1564u": {
-      "id": "1564u",
+    "1564i": {
+      "id": "1564i",
       "key": "P_Lueftung_Stufen",
       "read_only": false,
       "min": 0,
       "max": 5
     },
-    "1565u": {
-      "id": "1565u",
+    "1565i": {
+      "id": "1565i",
       "key": "P_Lueftung_Stosslueften",
       "unit": "min",
       "read_only": false,
@@ -448,8 +460,7 @@
       "device_class": "energy",
       "unit": "kWh",
       "state_class": "total_increasing",
-      "read_only": true,
-      "enabled_default": false
+      "read_only": true
     },
     "1301u": {
       "id": "1301u",
@@ -457,8 +468,7 @@
       "device_class": "energy",
       "unit": "kWh",
       "state_class": "total_increasing",
-      "read_only": true,
-      "enabled_default": false
+      "read_only": true
     },
     "1302u": {
       "id": "1302u",
@@ -466,8 +476,7 @@
       "device_class": "energy",
       "unit": "kWh",
       "state_class": "total_increasing",
-      "read_only": true,
-      "enabled_default": false
+      "read_only": true
     },
     "1303u": {
       "id": "1303u",
@@ -475,8 +484,7 @@
       "device_class": "energy",
       "unit": "kWh",
       "state_class": "total_increasing",
-      "read_only": true,
-      "enabled_default": false
+      "read_only": true
     },
     "1304u": {
       "id": "1304u",
@@ -484,8 +492,7 @@
       "device_class": "energy",
       "unit": "kWh",
       "state_class": "total_increasing",
-      "read_only": true,
-      "enabled_default": false
+      "read_only": true
     },
     "1305u": {
       "id": "1305u",
@@ -493,8 +500,7 @@
       "device_class": "energy",
       "unit": "kWh",
       "state_class": "total_increasing",
-      "read_only": true,
-      "enabled_default": false
+      "read_only": true
     },
     "1306u": {
       "id": "1306u",
@@ -502,8 +508,7 @@
       "device_class": "energy",
       "unit": "kWh",
       "state_class": "total_increasing",
-      "read_only": true,
-      "enabled_default": false
+      "read_only": true
     },
     "1307u": {
       "id": "1307u",
@@ -511,8 +516,7 @@
       "device_class": "energy",
       "unit": "kWh",
       "state_class": "total_increasing",
-      "read_only": true,
-      "enabled_default": false
+      "read_only": true
     },
     "1308u": {
       "id": "1308u",
@@ -520,8 +524,7 @@
       "device_class": "energy",
       "unit": "kWh",
       "state_class": "total_increasing",
-      "read_only": true,
-      "enabled_default": false
+      "read_only": true
     }
   },
   "status": {
@@ -790,8 +793,7 @@
       "device_class": "duration",
       "unit": "h",
       "state_class": "total_increasing",
-      "read_only": true,
-      "enabled_default": false
+      "read_only": true
     },
     "1381u": {
       "id": "1381u",
@@ -831,8 +833,7 @@
       "device_class": "duration",
       "unit": "h",
       "state_class": "total_increasing",
-      "read_only": true,
-      "enabled_default": false
+      "read_only": true
     },
     "1387u": {
       "id": "1387u",
@@ -856,8 +857,7 @@
       "device_class": "duration",
       "unit": "h",
       "state_class": "total_increasing",
-      "read_only": true,
-      "enabled_default": false
+      "read_only": true
     }
   },
   "cycles": {
@@ -883,8 +883,7 @@
       "device_class": "energy",
       "unit": "kWh",
       "state_class": "total_increasing",
-      "read_only": true,
-      "enabled_default": false
+      "read_only": true
     },
     "1674i": {
       "id": "1674i",
@@ -892,8 +891,7 @@
       "device_class": "energy",
       "unit": "kWh",
       "state_class": "total_increasing",
-      "read_only": true,
-      "enabled_default": false
+      "read_only": true
     },
     "1660i": {
       "id": "1660i",
@@ -909,8 +907,7 @@
       "device_class": "energy",
       "unit": "kWh",
       "state_class": "total_increasing",
-      "read_only": true,
-      "enabled_default": false
+      "read_only": true
     },
     "1662i": {
       "id": "1662i",
@@ -918,8 +915,7 @@
       "device_class": "energy",
       "unit": "kWh",
       "state_class": "total_increasing",
-      "read_only": true,
-      "enabled_default": false
+      "read_only": true
     },
     "1665i": {
       "id": "1665i",
@@ -935,8 +931,7 @@
       "device_class": "energy",
       "unit": "kWh",
       "state_class": "total_increasing",
-      "read_only": true,
-      "enabled_default": false
+      "read_only": true
     },
     "1664i": {
       "id": "1664i",
@@ -944,8 +939,7 @@
       "device_class": "energy",
       "unit": "kWh",
       "state_class": "total_increasing",
-      "read_only": true,
-      "enabled_default": false
+      "read_only": true
     },
     "1669i": {
       "id": "1669i",
@@ -961,8 +955,7 @@
       "device_class": "energy",
       "unit": "kWh",
       "state_class": "total_increasing",
-      "read_only": true,
-      "enabled_default": false
+      "read_only": true
     },
     "1667i": {
       "id": "1667i",
@@ -970,8 +963,7 @@
       "device_class": "energy",
       "unit": "kWh",
       "state_class": "total_increasing",
-      "read_only": true,
-      "enabled_default": false
+      "read_only": true
     },
     "1668i": {
       "id": "1668i",
@@ -979,8 +971,7 @@
       "device_class": "energy",
       "unit": "kWh",
       "state_class": "total_increasing",
-      "read_only": true,
-      "enabled_default": false
+      "read_only": true
     }
   }
 }
