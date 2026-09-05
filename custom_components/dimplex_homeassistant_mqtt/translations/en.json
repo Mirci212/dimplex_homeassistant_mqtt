@@ -367,13 +367,13 @@
         "name": "Generated Heating Energy Total Digits 1-4"
       },
       "energy_heating_total": {
-        "name": "Total Heat Quantity Heating"
+        "name": "Total Electrical Energy Heating"
       },
       "energy_hot_water_total": {
-        "name": "Total Heat Quantity Hot Water"
+        "name": "Total Electrical Energy Hot Water"
       },
       "energy_pool_total": {
-        "name": "Total Heat Quantity Swimming Pool"
+        "name": "Total Electrical Energy Swimming Pool"
       },
       "energy_wmz_res_total": {
         "name": "Total Generated Heat Quantity"
@@ -382,10 +382,10 @@
         "name": "Generated Heat Quantity Heating"
       },
       "energy_wmz_2_total": {
-        "name": "Generated Heat Quantity Hot Water"
+        "name": "Total Generated Heat Quantity Heating"
       },
       "energy_wmz_3_total": {
-        "name": "Generated Heat Quantity Swimming Pool"
+        "name": "Total Generated Heat Quantity Hot Water"
       }
     },
     "number": {

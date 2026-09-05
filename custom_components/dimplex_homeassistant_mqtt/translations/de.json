@@ -367,13 +367,13 @@
         "name": "Erzeugte Warmwasserenergie Gesamt Stellen 9-12 (Alt)"
       },
       "energy_heating_total": {
-        "name": "Wärmemenge Heizen Gesamt"
+        "name": "Elektrische Energie Heizen Gesamt"
       },
       "energy_hot_water_total": {
-        "name": "Wärmemenge Warmwasser Gesamt"
+        "name": "Elektrische Energie Warmwasser Gesamt"
       },
       "energy_pool_total": {
-        "name": "Wärmemenge Schwimmbad Gesamt"
+        "name": "Elektrische Energie Schwimmbad Gesamt"
       },
       "energy_wmz_res_total": {
         "name": "Erzeugte Wärmemenge Gesamt"
@@ -382,10 +382,10 @@
         "name": "Erzeugte Wärmemenge Heizen"
       },
       "energy_wmz_2_total": {
-        "name": "Erzeugte Wärmemenge Warmwasser"
+        "name": "Erzeugte Wärmemenge Heizen Gesamt"
       },
       "energy_wmz_3_total": {
-        "name": "Erzeugte Wärmemenge Schwimmbad"
+        "name": "Erzeugte Wärmemenge Warmwasser Gesamt"
       }
     },
     "number": {
