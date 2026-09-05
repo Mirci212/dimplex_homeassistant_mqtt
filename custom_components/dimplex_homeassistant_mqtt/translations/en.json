@@ -350,6 +350,42 @@
       },
       "E_Erzeugt_WW_Ges_Stellen_9_12_alt": {
         "name": "Generated Hot Water Energy Total Digits 9-12 (Alt)"
+      },
+      "E_Waermemenge_Heizen": {
+        "name": "Heat Quantity Heating"
+      },
+      "E_Waermemenge_WW": {
+        "name": "Heat Quantity Hot Water"
+      },
+      "E_Waermemenge_Schwimmbad": {
+        "name": "Heat Quantity Swimming Pool"
+      },
+      "E_Erzeugt_Heizen_Stellen_1_4": {
+        "name": "Generated Heating Energy Digits 1-4"
+      },
+      "E_Erzeugt_Heizen_Ges_Stellen_1_4": {
+        "name": "Generated Heating Energy Total Digits 1-4"
+      },
+      "energy_heating_total": {
+        "name": "Total Heat Quantity Heating"
+      },
+      "energy_hot_water_total": {
+        "name": "Total Heat Quantity Hot Water"
+      },
+      "energy_pool_total": {
+        "name": "Total Heat Quantity Swimming Pool"
+      },
+      "energy_wmz_res_total": {
+        "name": "Total Generated Heat Quantity"
+      },
+      "energy_wmz_1_total": {
+        "name": "Generated Heat Quantity Heating"
+      },
+      "energy_wmz_2_total": {
+        "name": "Generated Heat Quantity Hot Water"
+      },
+      "energy_wmz_3_total": {
+        "name": "Generated Heat Quantity Swimming Pool"
       }
     },
     "number": {

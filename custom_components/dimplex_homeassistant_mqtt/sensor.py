@@ -105,22 +105,23 @@ def _walk_sensor_config(node):
     if not isinstance(node, dict):
         return
 
-    # Wenn der Node direkt eine id besitzt
+    # 1. Wenn der Node direkt ein 'id'-Feld besitzt (z. B. "id": "1301a")
     if "id" in node:
         if node.get("read_only", True) and not str(node["id"]).endswith("d"):
             yield node
         return
 
-    # Rekursiv weiter durchsuchen
+    # 2. Rekursiv durch Dicts iterieren (für Kategorien wie "energy", "heating")
     for key, value in node.items():
-        if isinstance(value, dict) and "key" in value and "id" not in value:
-            # Für custom Einträge ohne separates 'id'-Feld
-            value_copy = dict(value)
-            value_copy["id"] = key
-            if value_copy.get("read_only", True) and not str(key).endswith("d"):
-                yield value_copy
-        else:
-            yield from _walk_sensor_config(value)
+        if isinstance(value, dict):
+            # Falls das Unter-Dict keinen eigenen "id"-Key hat (unsere berechneten Keys)
+            if "id" not in value and "key" in value:
+                value_copy = dict(value)
+                value_copy["id"] = key
+                if value_copy.get("read_only", True) and not str(key).endswith("d"):
+                    yield value_copy
+            else:
+                yield from _walk_sensor_config(value)
 
 
 def _load_sensor_descriptions():
@@ -130,7 +131,6 @@ def _load_sensor_descriptions():
     descriptions = []
 
     for item in _walk_sensor_config(config):
-        # Mappe den enabled_default Schlüssel korrekt auf entity_registry_enabled_default
         enabled = item.get("enabled_default", True)
         if "entity_registry_enabled_default" in item:
             enabled = item["entity_registry_enabled_default"]
@@ -138,7 +138,7 @@ def _load_sensor_descriptions():
         descriptions.append(
             DimplexMqttSensorEntityDescription(
                 key=item["id"],
-                translation_key=item.get("translation_key", item["key"]),
+                translation_key=item.get("translation_key", item.get("key", item["id"])),
                 device_class=DEVICE_CLASSES.get(item.get("device_class")),
                 native_unit_of_measurement=UNITS.get(item.get("unit")),
                 state_class=STATE_CLASSES.get(item.get("state_class")),
@@ -160,15 +160,17 @@ async def async_setup_entry(hass, entry, async_add_entities):
     added: set[str] = set()
     installer_access = coordinator.config.get("installer_access", False)
 
-    # Liste der virtuellen/berechneten Gesamtsensoren
-    CALCULATED_KEYS = {
-        "energy_heating_total",
-        "energy_hot_water_total",
-        "energy_pool_total",
-        "energy_wmz_res_total",
-        "energy_wmz_1_total",
-        "energy_wmz_2_total",
-        "energy_wmz_3_total",
+    # Roh-Register der einzelnen Stellen, die NICHT als eigene Sensoren angelegt werden sollen
+    IGNORED_RAW_KEYS = {
+        # Elektrische Energie Einzelstellen
+        "1300u", "1301u", "1302u",
+        "1303u", "1304u", "1305u",
+        "1306u", "1307u", "1308u",
+        # WMZ Einzelstellen
+        "1672i", "1673i", "1674i",  # Heizen
+        "1660i", "1661i", "1662i",  # Gesamt
+        "1663i", "1664i", "1665i",  # Warmwasser
+        "1669i", "1670i", "1671i",  # Kühlung / Weitere
     }
 
     def add_new_sensors():
@@ -176,11 +178,15 @@ async def async_setup_entry(hass, entry, async_add_entities):
         new_entities = []
 
         for description in SENSOR_DESCRIPTIONS:
+            # Ignoriere die Roh-Register der Einzelstellen
+            if description.key in IGNORED_RAW_KEYS:
+                continue
+
             if description.installer_only and not installer_access:
                 continue
 
-            # Registriere den Sensor, wenn Daten vorhanden sind ODER wenn es ein berechneter Gesamtsensor ist
-            if (description.key in data or description.key in CALCULATED_KEYS) and description.key not in added:
+            # Sensor wird NUR angelegt, wenn er tatsächlich im Data-Dict vorhanden ist
+            if description.key in data and description.key not in added:
                 added.add(description.key)
                 new_entities.append(DimplexMqttSensor(coordinator, description))
 
@@ -215,6 +221,8 @@ class DimplexMqttSensor(CoordinatorEntity[DimplexMqttCoordinator], SensorEntity)
 
     @property
     def available(self) -> bool:
+        if not self.coordinator.last_update_success:
+            return False
         data = self.coordinator.data or {}
         return self.entity_description.key in data
 

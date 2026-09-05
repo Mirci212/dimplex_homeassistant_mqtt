@@ -972,6 +972,62 @@
       "unit": "kWh",
       "state_class": "total_increasing",
       "read_only": true
+    },
+    "energy_heating_total": {
+      "id": "energy_heating_total",
+      "key": "energy_heating_total",
+      "device_class": "energy",
+      "state_class": "total_increasing",
+      "unit": "kWh",
+      "read_only": true
+    },
+    "energy_hot_water_total": {
+      "id": "energy_hot_water_total",
+      "key": "energy_hot_water_total",
+      "device_class": "energy",
+      "state_class": "total_increasing",
+      "unit": "kWh",
+      "read_only": true
+    },
+    "energy_pool_total": {
+      "id": "energy_pool_total",
+      "key": "energy_pool_total",
+      "device_class": "energy",
+      "state_class": "total_increasing",
+      "unit": "kWh",
+      "read_only": true
+    },
+    "energy_wmz_res_total": {
+      "id": "energy_wmz_res_total",
+      "key": "energy_wmz_res_total",
+      "device_class": "energy",
+      "state_class": "total_increasing",
+      "unit": "kWh",
+      "read_only": true
+    },
+    "energy_wmz_1_total": {
+      "id": "energy_wmz_1_total",
+      "key": "energy_wmz_1_total",
+      "device_class": "energy",
+      "state_class": "total_increasing",
+      "unit": "kWh",
+      "read_only": true
+    },
+    "energy_wmz_2_total": {
+      "id": "energy_wmz_2_total",
+      "key": "energy_wmz_2_total",
+      "device_class": "energy",
+      "state_class": "total_increasing",
+      "unit": "kWh",
+      "read_only": true
+    },
+    "energy_wmz_3_total": {
+      "id": "energy_wmz_3_total",
+      "key": "energy_wmz_3_total",
+      "device_class": "energy",
+      "state_class": "total_increasing",
+      "unit": "kWh",
+      "read_only": true
     }
   }
 }

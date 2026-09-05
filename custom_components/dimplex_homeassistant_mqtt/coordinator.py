@@ -43,6 +43,7 @@ class DimplexMqttCoordinator(DataUpdateCoordinator):
         )
 
     def _async_handle_values_changed(self, changed_values: dict):
+        # Bestehende Daten nicht überschreiben, sondern aktualisieren
         data = dict(self.data or {})
         data.update(changed_values)
 
@@ -65,15 +66,6 @@ class DimplexMqttCoordinator(DataUpdateCoordinator):
 
                     calculated_value = (val_high * 100_000_000) + (val_mid * 10_000) + val_low
                     data[target] = calculated_value
-
-                    _LOGGER.debug(
-                        "Calculated %s: %s (low: %s, mid: %s, high: %s)",
-                        target,
-                        calculated_value,
-                        val_low,
-                        val_mid,
-                        val_high,
-                    )
                 except (TypeError, ValueError) as err:
                     _LOGGER.error("Failed to calculate %s: %s", target, err)
 

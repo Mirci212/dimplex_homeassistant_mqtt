@@ -344,6 +344,48 @@
       },
       "E_Erzeugt_WW_Ges_Stellen_9_12": {
         "name": "Erzeugte Warmwasserenergie Gesamt Stellen 9-12"
+      },
+      "E_Waermemenge_Heizen": {
+        "name": "Wärmemenge Heizen"
+      },
+      "E_Waermemenge_WW": {
+        "name": "Wärmemenge Warmwasser"
+      },
+      "E_Waermemenge_Schwimmbad": {
+        "name": "Wärmemenge Schwimmbad"
+      },
+      "E_Erzeugt_Heizen_Stellen_1_4": {
+        "name": "Erzeugte Heizenergie Stellen 1-4"
+      },
+      "E_Erzeugt_Heizen_Ges_Stellen_1_4": {
+        "name": "Erzeugte Heizenergie Gesamt Stellen 1-4"
+      },
+      "E_Erzeugt_WW_Ges_Stellen_5_8_alt": {
+        "name": "Erzeugte Warmwasserenergie Gesamt Stellen 5-8 (Alt)"
+      },
+      "E_Erzeugt_WW_Ges_Stellen_9_12_alt": {
+        "name": "Erzeugte Warmwasserenergie Gesamt Stellen 9-12 (Alt)"
+      },
+      "energy_heating_total": {
+        "name": "Wärmemenge Heizen Gesamt"
+      },
+      "energy_hot_water_total": {
+        "name": "Wärmemenge Warmwasser Gesamt"
+      },
+      "energy_pool_total": {
+        "name": "Wärmemenge Schwimmbad Gesamt"
+      },
+      "energy_wmz_res_total": {
+        "name": "Erzeugte Wärmemenge Gesamt"
+      },
+      "energy_wmz_1_total": {
+        "name": "Erzeugte Wärmemenge Heizen"
+      },
+      "energy_wmz_2_total": {
+        "name": "Erzeugte Wärmemenge Warmwasser"
+      },
+      "energy_wmz_3_total": {
+        "name": "Erzeugte Wärmemenge Schwimmbad"
       }
     },
     "number": {
