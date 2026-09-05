@@ -48,13 +48,13 @@ class DimplexMqttCoordinator(DataUpdateCoordinator):
         data.update(changed_values)
 
         energy_mappings = {
-            "energy_heating_total": ("1300u", "1301u", "1302u"),
-            "energy_hot_water_total": ("1303u", "1304u", "1305u"),
-            "energy_pool_total": ("1306u", "1307u", "1308u"),
-            "energy_wmz_res_total": ("1672i", "1673i", "1674i"),
-            "energy_wmz_1_total": ("1660i", "1661i", "1662i"),
-            "energy_wmz_2_total": ("1663i", "1664i", "1665i"),
-            "energy_wmz_3_total": ("1669i", "1670i", "1671i"),
+        "energy_heating_total": ("1300u", "1301u", "1302u"),
+        "energy_hot_water_total": ("1303u", "1304u", "1305u"),
+        "energy_pool_total": ("1306u", "1307u", "1308u"),
+        "energy_wmz_1_total": ("1672i", "1673i", "1674i"),
+        "energy_wmz_res_total": ("1660i", "1661i", "1662i"),
+        "energy_wmz_2_total": ("1663i", "1664i", "1665i"), 
+        "energy_wmz_3_total": ("1669i", "1670i", "1671i"), 
         }
 
         for target, (reg_low, reg_mid, reg_high) in energy_mappings.items():
